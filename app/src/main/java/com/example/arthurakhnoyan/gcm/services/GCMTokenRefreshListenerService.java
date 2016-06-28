@@ -1,4 +1,4 @@
-package com.example.arthurakhnoyan.gcm;
+package com.example.arthurakhnoyan.gcm.services;
 
 import android.content.Intent;
 
