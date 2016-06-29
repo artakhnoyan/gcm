@@ -32,7 +32,7 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:hint="Write your message"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="top"
             android:imeOptions="actionDone"
             android:inputType="textMultiLine|textFilter|textVisiblePassword|textNoSuggestions"
@@ -45,11 +45,13 @@
         <Button
             android:id="@+id/send"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Send"
             android:layout_above="@+id/linearLayout"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
 
     </LinearLayout>
 
