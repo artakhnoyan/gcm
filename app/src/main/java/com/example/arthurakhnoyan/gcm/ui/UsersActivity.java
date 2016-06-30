@@ -118,7 +118,12 @@ public class UsersActivity extends AppCompatActivity implements AdapterView.OnIt
             @Override
             public void onFailure(Call call, IOException e) {
                 new BackGroundToast(getApplicationContext(), "Something went wrong with getting users");
-                swipeRefreshLayout.setRefreshing(false);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                });
             }
 
             @Override
